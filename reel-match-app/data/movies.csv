@@ -1,0 +1,175 @@
+movie_id,title,year,genres,director,cast,tags
+1,The Shawshank Redemption,1994,Drama,Frank Darabont,"Tim Robbins,Morgan Freeman",prison hope friendship redemption banker
+2,The Godfather,1972,Crime|Drama,Francis Ford Coppola,"Marlon Brando,Al Pacino",mafia family crime power new york
+3,The Dark Knight,2008,Action|Crime|Drama,Christopher Nolan,"Christian Bale,Heath Ledger",batman joker gotham vigilante crime
+4,Pulp Fiction,1994,Crime|Drama,Quentin Tarantino,"John Travolta,Samuel L. Jackson",nonlinear hitmen los angeles dialogue crime
+5,Forrest Gump,1994,Drama|Romance,Robert Zemeckis,"Tom Hanks,Robin Wright",alabama vietnam love destiny life story
+6,Inception,2010,Action|Sci-Fi|Thriller,Christopher Nolan,"Leonardo DiCaprio,Elliot Page",dreams heist subconscious mind bending
+7,Fight Club,1999,Drama,David Fincher,"Brad Pitt,Edward Norton",insomnia underground fighting identity satire
+8,The Matrix,1999,Action|Sci-Fi,"Lana Wachowski,Lilly Wachowski","Keanu Reeves,Laurence Fishburne",simulation hacker dystopia robots reality
+9,Goodfellas,1990,Biography|Crime|Drama,Martin Scorsese,"Robert De Niro,Ray Liotta",mob new york gangster narration rise fall
+10,Interstellar,2014,Adventure|Drama|Sci-Fi,Christopher Nolan,"Matthew McConaughey,Anne Hathaway",space wormhole time gravity farmer astronaut
+11,The Lord of the Rings: The Fellowship of the Ring,2001,Action|Adventure|Fantasy,Peter Jackson,"Elijah Wood,Ian McKellen",hobbit ring quest middle earth wizard
+12,The Lord of the Rings: The Return of the King,2003,Action|Adventure|Fantasy,Peter Jackson,"Elijah Wood,Viggo Mortensen",hobbit ring quest middle earth war
+13,Se7en,1995,Crime|Drama|Mystery,David Fincher,"Brad Pitt,Morgan Freeman",serial killer detective sins city noir
+14,The Silence of the Lambs,1991,Crime|Drama|Thriller,Jonathan Demme,"Jodie Foster,Anthony Hopkins",fbi cannibal profiler serial killer suspense
+15,Saving Private Ryan,1998,Drama|War,Steven Spielberg,"Tom Hanks,Matt Damon",normandy world war two soldiers mission
+16,The Green Mile,1999,Crime|Drama|Fantasy,Frank Darabont,"Tom Hanks,Michael Clarke Duncan",prison death row miracle supernatural
+17,Gladiator,2000,Action|Adventure|Drama,Ridley Scott,"Russell Crowe,Joaquin Phoenix",rome arena revenge general emperor
+18,The Departed,2006,Crime|Drama|Thriller,Martin Scorsese,"Leonardo DiCaprio,Matt Damon",undercover boston mob police mole
+19,Whiplash,2014,Drama|Music,Damien Chazelle,"Miles Teller,J.K. Simmons",jazz drummer conservatory obsession mentor
+20,The Prestige,2006,Drama|Mystery|Sci-Fi,Christopher Nolan,"Christian Bale,Hugh Jackman",magicians rivalry illusion victorian
+21,Memento,2000,Mystery|Thriller,Christopher Nolan,"Guy Pearce,Carrie-Anne Moss",amnesia revenge nonlinear tattoo investigation
+22,The Usual Suspects,1995,Crime|Mystery|Thriller,Bryan Singer,"Kevin Spacey,Gabriel Byrne",heist interrogation twist criminals conspiracy
+23,American History X,1998,Crime|Drama,Tony Kaye,"Edward Norton,Edward Furlong",neo nazi redemption brothers racism
+24,Léon: The Professional,1994,Action|Crime|Drama,Luc Besson,"Jean Reno,Natalie Portman",hitman new york orphan mentor mob
+25,The Sixth Sense,1999,Drama|Mystery|Thriller,M. Night Shyamalan,"Bruce Willis,Haley Joel Osment",ghosts child psychologist philadelphia twist
+26,Django Unchained,2012,Drama|Western,Quentin Tarantino,"Jamie Foxx,Christoph Waltz",slavery bounty hunter revenge south
+27,The Wolf of Wall Street,2013,Biography|Comedy|Crime,Martin Scorsese,"Leonardo DiCaprio,Jonah Hill",stockbroker fraud excess wall street
+28,Joker,2019,Crime|Drama|Thriller,Todd Phillips,"Joaquin Phoenix,Robert De Niro",gotham clown mental illness comedian villain
+29,Parasite,2019,Drama|Thriller,Bong Joon-ho,"Song Kang-ho,Lee Sun-kyun",class inequality seoul family scheme
+30,Get Out,2017,Horror|Mystery|Thriller,Jordan Peele,"Daniel Kaluuya,Allison Williams",race horror hypnosis family estate
+31,A Quiet Place,2018,Drama|Horror|Sci-Fi,John Krasinski,"Emily Blunt,John Krasinski",silence monsters family survival farm
+32,Hereditary,2018,Drama|Horror|Mystery,Ari Aster,"Toni Collette,Alex Wolff",family curse grief occult miniatures
+33,The Conjuring,2013,Horror|Mystery|Thriller,James Wan,"Vera Farmiga,Patrick Wilson",haunted house paranormal investigators demon
+34,It,2017,Horror,Andres Muschietti,"Bill Skarsgård,Jaeden Martell",clown children small town fear sewer
+35,Shutter Island,2010,Mystery|Thriller,Martin Scorsese,"Leonardo DiCaprio,Mark Ruffalo",asylum marshal island conspiracy memory
+36,Zodiac,2007,Crime|Drama|Mystery,David Fincher,"Jake Gyllenhaal,Robert Downey Jr.",serial killer cartoonist reporter san francisco
+37,Gone Girl,2014,Drama|Mystery|Thriller,David Fincher,"Ben Affleck,Rosamund Pike",marriage disappearance media suspicion twist
+38,No Country for Old Men,2007,Crime|Drama|Thriller,"Joel Coen,Ethan Coen","Tommy Lee Jones,Javier Bardem",texas hitman drug money sheriff
+39,There Will Be Blood,2007,Drama,Paul Thomas Anderson,"Daniel Day-Lewis,Paul Dano",oil prospector ambition preacher california
+40,Blade Runner 2049,2017,Action|Drama|Mystery|Sci-Fi,Denis Villeneuve,"Ryan Gosling,Harrison Ford",replicant detective dystopia los angeles android
+41,Blade Runner,1982,Action|Drama|Sci-Fi,Ridley Scott,"Harrison Ford,Rutger Hauer",replicant detective dystopia los angeles noir
+42,Arrival,2016,Drama|Mystery|Sci-Fi,Denis Villeneuve,"Amy Adams,Jeremy Renner",aliens linguist language time communication
+43,Ex Machina,2014,Drama|Sci-Fi|Thriller,Alex Garland,"Domhnall Gleeson,Alicia Vikander",artificial intelligence robot programmer test
+44,Her,2013,Drama|Romance|Sci-Fi,Spike Jonze,"Joaquin Phoenix,Scarlett Johansson",operating system loneliness love los angeles
+45,Eternal Sunshine of the Spotless Mind,2004,Drama|Romance|Sci-Fi,Michel Gondry,"Jim Carrey,Kate Winslet",memory erasure breakup love clinic
+46,La La Land,2016,Comedy|Drama|Music|Romance,Damien Chazelle,"Ryan Gosling,Emma Stone",jazz musician actress hollywood dream romance
+47,The Grand Budapest Hotel,2014,Adventure|Comedy|Drama,Wes Anderson,"Ralph Fiennes,Tony Revolori",concierge hotel europe heist quirky
+48,Amélie,2001,Comedy|Romance,Jean-Pierre Jeunet,"Audrey Tautou,Mathieu Kassovitz",paris waitress whimsical kindness romance
+49,The Truman Show,1998,Comedy|Drama|Sci-Fi,Peter Weir,"Jim Carrey,Laura Linney",reality tv fake town insurance salesman freedom
+50,Groundhog Day,1993,Comedy|Fantasy|Romance,Harold Ramis,"Bill Murray,Andie MacDowell",time loop weatherman small town self improvement
+51,Superbad,2007,Comedy,Greg Mottola,"Jonah Hill,Michael Cera",high school party friendship alcohol coming of age
+52,Bridesmaids,2011,Comedy|Romance,Paul Feig,"Kristen Wiig,Maya Rudolph",wedding friendship rivalry comedy chicago
+53,The Hangover,2009,Comedy,Todd Phillips,"Bradley Cooper,Ed Helms",las vegas bachelor party memory loss friends
+54,Step Brothers,2008,Comedy,Adam McKay,"Will Ferrell,John C. Reilly",stepbrothers immature family comedy rivalry
+55,Anchorman: The Legend of Ron Burgundy,2004,Comedy,Adam McKay,"Will Ferrell,Christina Applegate",newsroom 1970s san diego sexism satire
+56,Deadpool,2016,Action|Adventure|Comedy,Tim Miller,"Ryan Reynolds,Morena Baccarin",mercenary superhero mutant satire fourth wall
+57,Guardians of the Galaxy,2014,Action|Adventure|Comedy|Sci-Fi,James Gunn,"Chris Pratt,Zoe Saldana",space outlaws team humor infinity stone
+58,Iron Man,2008,Action|Adventure|Sci-Fi,Jon Favreau,"Robert Downey Jr.,Gwyneth Paltrow",billionaire armor weapons origin superhero
+59,The Avengers,2012,Action|Adventure|Sci-Fi,Joss Whedon,"Robert Downey Jr.,Chris Evans",superhero team new york alien invasion
+60,Avengers: Endgame,2019,Action|Adventure|Drama|Sci-Fi,"Anthony Russo,Joe Russo","Robert Downey Jr.,Chris Evans",superhero time travel sacrifice universe finale
+61,Black Panther,2018,Action|Adventure|Sci-Fi,Ryan Coogler,"Chadwick Boseman,Michael B. Jordan",wakanda king superhero africa vibranium
+62,Spider-Man: Into the Spider-Verse,2018,Action|Adventure|Animation|Sci-Fi,"Bob Persichetti,Peter Ramsey","Shameik Moore,Jake Johnson",animated superhero multiverse brooklyn teenager
+63,Logan,2017,Action|Drama|Sci-Fi,James Mangold,"Hugh Jackman,Patrick Stewart",mutant aging superhero road trip mexico
+64,Mad Max: Fury Road,2015,Action|Adventure|Sci-Fi,George Miller,"Tom Hardy,Charlize Theron",desert wasteland chase warlord survival
+65,John Wick,2014,Action|Crime|Thriller,"Chad Stahelski,David Leitch","Keanu Reeves,Michael Nyqvist",assassin revenge dog underworld new york
+66,Kill Bill: Vol. 1,2003,Action|Crime|Thriller,Quentin Tarantino,"Uma Thurman,David Carradine",assassin revenge samurai wedding bride
+67,Skyfall,2012,Action|Adventure|Thriller,Sam Mendes,"Daniel Craig,Judi Dench",spy mi6 scotland villain agent
+68,Casino Royale,2006,Action|Adventure|Thriller,Martin Campbell,"Daniel Craig,Eva Green",spy poker origin bond montenegro
+69,Mission: Impossible - Fallout,2018,Action|Adventure|Thriller,Christopher McQuarrie,"Tom Cruise,Henry Cavill",spy stunts plutonium team mission
+70,Die Hard,1988,Action|Thriller,John McTiernan,"Bruce Willis,Alan Rickman",hostage skyscraper christmas terrorists cop
+71,Terminator 2: Judgment Day,1991,Action|Sci-Fi,James Cameron,"Arnold Schwarzenegger,Linda Hamilton",robot future war time travel android
+72,Aliens,1986,Action|Adventure|Sci-Fi,James Cameron,"Sigourney Weaver,Michael Biehn",space marines xenomorph colony survival
+73,Jurassic Park,1993,Action|Adventure|Sci-Fi,Steven Spielberg,"Sam Neill,Laura Dern",dinosaurs island theme park scientist
+74,E.T. the Extra-Terrestrial,1982,Family|Sci-Fi,Steven Spielberg,"Henry Thomas,Drew Barrymore",alien friendship children suburb bicycle
+75,Back to the Future,1985,Adventure|Comedy|Sci-Fi,Robert Zemeckis,"Michael J. Fox,Christopher Lloyd",time travel delorean 1955 teenager scientist
+76,Star Wars: A New Hope,1977,Action|Adventure|Fantasy|Sci-Fi,George Lucas,"Mark Hamill,Harrison Ford",rebels empire jedi space opera droid
+77,Star Wars: The Empire Strikes Back,1980,Action|Adventure|Fantasy|Sci-Fi,Irvin Kershner,"Mark Hamill,Harrison Ford",rebels empire jedi space father reveal
+78,Toy Story,1995,Animation|Adventure|Comedy|Family,John Lasseter,"Tom Hanks,Tim Allen",toys friendship kid pixar rivalry
+79,Finding Nemo,2003,Animation|Adventure|Comedy|Family,"Andrew Stanton,Lee Unkrich","Albert Brooks,Ellen DeGeneres",fish ocean father son search pixar
+80,Up,2009,Animation|Adventure|Comedy|Family,"Pete Docter,Bob Peterson","Edward Asner,Jordan Nagai",balloons house widower adventure pixar
+81,Inside Out,2015,Animation|Adventure|Comedy|Family,"Pete Docter,Ronnie Del Carmen","Amy Poehler,Phyllis Smith",emotions mind child pixar sadness joy
+82,Coco,2017,Animation|Adventure|Comedy|Family,"Lee Unkrich,Adrian Molina","Anthony Gonzalez,Gael García Bernal",mexico music afterlife family pixar
+83,Spirited Away,2001,Animation|Adventure|Family|Fantasy,Hayao Miyazaki,"Rumi Hiiragi,Miyu Irino",spirits bathhouse magic japan girl
+84,Your Name.,2016,Animation|Drama|Fantasy|Romance,Makoto Shinkai,"Ryunosuke Kamiki,Mone Kamishiraishi",body swap comet japan teenagers love
+85,The Lion King,1994,Animation|Adventure|Drama|Family,"Roger Allers,Rob Minkoff","Matthew Broderick,Jeremy Irons",africa pride lion king father savanna
+86,Shrek,2001,Animation|Adventure|Comedy|Family,"Andrew Adamson,Vicky Jenson","Mike Myers,Eddie Murphy",ogre fairy tale swamp princess satire
+87,Despicable Me,2010,Animation|Comedy|Family,"Pierre Coffin,Chris Renaud","Steve Carell,Jason Segel",villain minions adoption heist family
+88,Zootopia,2016,Animation|Adventure|Comedy|Family,"Byron Howard,Rich Moore","Ginnifer Goodwin,Jason Bateman",animals city detective bunny prejudice
+89,How to Train Your Dragon,2010,Animation|Action|Adventure|Family,"Dean DeBlois,Chris Sanders","Jay Baruchel,Gerard Butler",vikings dragons friendship island training
+90,Titanic,1997,Drama|Romance,James Cameron,"Leonardo DiCaprio,Kate Winslet",ship iceberg love class 1912 disaster
+91,The Notebook,2004,Drama|Romance,Nick Cassavetes,"Ryan Gosling,Rachel McAdams",summer romance letters memory class divide
+92,Pride & Prejudice,2005,Drama|Romance,Joe Wright,"Keira Knightley,Matthew Macfadyen",england class marriage sisters regency
+93,500 Days of Summer,2009,Comedy|Drama|Romance,Marc Webb,"Joseph Gordon-Levitt,Zooey Deschanel",breakup nonlinear los angeles greeting cards
+94,Silver Linings Playbook,2012,Comedy|Drama|Romance,David O. Russell,"Bradley Cooper,Jennifer Lawrence",mental health dance philadelphia family romance
+95,La Vie en Rose,2007,Biography|Drama|Music,Olivier Dahan,"Marion Cotillard,Sylvie Testud",singer paris fame tragedy biography
+96,Bohemian Rhapsody,2018,Biography|Drama|Music,Bryan Singer,"Rami Malek,Lucy Boynton",queen band rock singer biography live aid
+97,A Star Is Born,2018,Drama|Music|Romance,"Bradley Cooper,","Lady Gaga,Bradley Cooper",musician fame addiction romance singer
+98,Rocky,1976,Drama|Sport,John G. Avildsen,"Sylvester Stallone,Talia Shire",boxer philadelphia underdog training champion
+99,Creed,2015,Drama|Sport,Ryan Coogler,"Michael B. Jordan,Sylvester Stallone",boxer legacy philadelphia mentor training
+100,Rush,2013,Action|Biography|Drama|Sport,Ron Howard,"Chris Hemsworth,Daniel Brühl",formula one racing rivalry 1970s
+101,Moneyball,2011,Biography|Drama|Sport,Bennett Miller,"Brad Pitt,Jonah Hill",baseball statistics oakland manager analytics
+102,The Social Network,2010,Biography|Drama,David Fincher,"Jesse Eisenberg,Andrew Garfield",facebook harvard lawsuit startup founder
+103,Steve Jobs,2015,Biography|Drama,Danny Boyle,"Michael Fassbender,Kate Winslet",apple product launches biography technology
+104,The Imitation Game,2014,Biography|Drama|Thriller,Morten Tyldum,"Benedict Cumberbatch,Keira Knightley",codebreaker enigma world war two mathematician
+105,A Beautiful Mind,2001,Biography|Drama,Ron Howard,"Russell Crowe,Jennifer Connelly",mathematician schizophrenia princeton nobel
+106,The King's Speech,2010,Biography|Drama|History,Tom Hooper,"Colin Firth,Geoffrey Rush",stammer king speech therapist britain
+107,12 Years a Slave,2013,Biography|Drama|History,Steve McQueen,"Chiwetel Ejiofor,Michael Fassbender",slavery louisiana freedom kidnapping history
+108,Schindler's List,1993,Biography|Drama|History,Steven Spielberg,"Liam Neeson,Ralph Fiennes",holocaust factory rescue poland world war two
+109,Braveheart,1995,Biography|Drama|War,Mel Gibson,"Mel Gibson,Sophie Marceau",scotland rebellion freedom medieval war
+110,Dunkirk,2017,Action|Drama|History|War,Christopher Nolan,"Fionn Whitehead,Tom Hardy",evacuation beach world war two soldiers
+111,1917,2019,Drama|War,Sam Mendes,"George MacKay,Dean-Charles Chapman",world war one soldiers mission single shot
+112,Apocalypse Now,1979,Drama|War,Francis Ford Coppola,"Martin Sheen,Marlon Brando",vietnam river colonel madness jungle
+113,Full Metal Jacket,1987,Drama|War,Stanley Kubrick,"Matthew Modine,R. Lee Ermey",vietnam boot camp marines training war
+114,Black Hawk Down,2001,Action|Drama|War,Ridley Scott,"Josh Hartnett,Ewan McGregor",somalia mission soldiers helicopter crash
+115,American Sniper,2014,Action|Biography|Drama|War,Clint Eastwood,"Bradley Cooper,Sienna Miller",sniper iraq soldier biography war
+116,Hacksaw Ridge,2016,Biography|Drama|History|War,Mel Gibson,"Andrew Garfield,Sam Worthington",pacifist medic okinawa world war two
+117,The Pianist,2002,Biography|Drama|War,Roman Polanski,"Adrien Brody,Thomas Kretschmann",holocaust warsaw pianist survival poland
+118,Life Is Beautiful,1997,Comedy|Drama|Romance,Roberto Benigni,"Roberto Benigni,Nicoletta Braschi",holocaust father son concentration camp humor
+119,The Boy in the Striped Pajamas,2008,Drama|War,Mark Herman,"Asa Butterfield,Vera Farmiga",holocaust friendship children fence
+120,Inglourious Basterds,2009,Adventure|Drama|War,Quentin Tarantino,"Brad Pitt,Christoph Waltz",nazi revenge france cinema world war two
+121,The Great Escape,1963,Adventure|Drama|History|War,John Sturges,"Steve McQueen,James Garner",prisoners escape tunnel world war two
+122,Lawrence of Arabia,1962,Adventure|Biography|Drama|War,David Lean,"Peter O'Toole,Alec Guinness",desert arabia officer rebellion epic
+123,Casablanca,1942,Drama|Romance|War,Michael Curtiz,"Humphrey Bogart,Ingrid Bergman",morocco nightclub love resistance world war two
+124,The Wizard of Oz,1939,Adventure|Family|Fantasy|Musical,Victor Fleming,"Judy Garland,Frank Morgan",tornado kansas witch yellow brick road
+125,Singin' in the Rain,1952,Comedy|Musical|Romance,"Stanley Donen,Gene Kelly","Gene Kelly,Debbie Reynolds",hollywood silent film musical dance
+126,West Side Story,1961,Crime|Drama|Musical|Romance,"Robert Wise,Jerome Robbins","Natalie Wood,Richard Beymer",gangs new york love rivalry musical
+127,Chicago,2002,Comedy|Crime|Musical,Rob Marshall,"Renée Zellweger,Catherine Zeta-Jones",murder fame vaudeville prison musical
+128,Moulin Rouge!,2001,Drama|Musical|Romance,Baz Luhrmann,"Nicole Kidman,Ewan McGregor",paris cabaret love bohemian musical
+129,The Sound of Music,1965,Drama|Family|Musical|Romance,Robert Wise,"Julie Andrews,Christopher Plummer",austria governess nuns family singing
+130,Frozen,2013,Animation|Adventure|Comedy|Family|Musical,"Chris Buck,Jennifer Lee","Kristen Bell,Idina Menzel",sisters ice kingdom snow queen musical
+131,Beauty and the Beast,1991,Animation|Family|Fantasy|Musical|Romance,"Gary Trousdale,Kirk Wise","Paige O'Hara,Robby Benson",curse castle rose enchanted romance
+132,Aladdin,1992,Animation|Adventure|Comedy|Family|Fantasy|Musical,"Ron Clements,John Musker","Scott Weinger,Robin Williams",genie lamp thief agrabah prince
+133,The Little Mermaid,1989,Animation|Family|Fantasy|Musical|Romance,"Ron Clements,John Musker","Jodi Benson,Pat Carroll",mermaid ocean prince voice sea witch
+134,Twilight,2008,Drama|Fantasy|Romance,Catherine Hardwicke,"Kristen Stewart,Robert Pattinson",vampire high school forbidden love forest
+135,The Fault in Our Stars,2014,Drama|Romance,Josh Boone,"Shailene Woodley,Ansel Elgort",cancer teenagers love support group amsterdam
+136,Me Before You,2016,Drama|Romance,Thea Sharrock,"Emilia Clarke,Sam Claflin",caretaker paralysis love england class
+137,Crazy Rich Asians,2018,Comedy|Drama|Romance,Jon M. Chu,"Constance Wu,Henry Golding",singapore wealth family wedding culture
+138,The Devil Wears Prada,2006,Comedy|Drama,David Frankel,"Meryl Streep,Anne Hathaway",fashion magazine assistant new york boss
+139,Legally Blonde,2001,Comedy|Romance,Robert Luketic,"Reese Witherspoon,Luke Wilson",law school sorority underestimated california
+140,Mean Girls,2004,Comedy,Mark Waters,"Lindsay Lohan,Rachel McAdams",high school clique popularity cafeteria
+141,Clueless,1995,Comedy|Drama|Romance,Amy Heckerling,"Alicia Silverstone,Stacey Dash",high school beverly hills makeover matchmaking
+142,10 Things I Hate About You,1999,Comedy|Drama|Romance,Gil Junger,"Heath Ledger,Julia Stiles",high school sisters dating bet seattle
+143,The Breakfast Club,1985,Comedy|Drama,John Hughes,"Emilio Estevez,Judd Nelson",detention high school teenagers stereotypes
+144,Ferris Bueller's Day Off,1986,Comedy,John Hughes,"Matthew Broderick,Alan Ruck",chicago skip school friends adventure teenager
+145,Dead Poets Society,1989,Comedy|Drama,Peter Weir,"Robin Williams,Ethan Hawke",teacher poetry boarding school inspiration
+146,Good Will Hunting,1997,Drama|Romance,Gus Van Sant,"Robin Williams,Matt Damon",genius janitor boston therapy mathematics
+147,The Pursuit of Happyness,2006,Biography|Drama,Gabrielle Muccino,"Will Smith,Jaden Smith",homeless salesman father son san francisco
+148,Slumdog Millionaire,2008,Drama|Romance,"Danny Boyle,Loveleen Tandan","Dev Patel,Freida Pinto",mumbai game show orphan love slum
+149,Life of Pi,2012,Adventure|Drama|Fantasy,Ang Lee,"Suraj Sharma,Irrfan Khan",shipwreck tiger ocean survival faith
+150,The Martian,2015,Adventure|Drama|Sci-Fi,Ridley Scott,"Matt Damon,Jessica Chastain",mars astronaut survival nasa botanist
+151,Gravity,2013,Drama|Sci-Fi|Thriller,Alfonso Cuarón,"Sandra Bullock,George Clooney",space astronaut survival debris orbit
+152,Cast Away,2000,Adventure|Drama,Robert Zemeckis,"Tom Hanks,Helen Hunt",island survival fedex plane crash isolation
+153,Into the Wild,2007,Adventure|Biography|Drama,Sean Penn,"Emile Hirsche,Vince Vaughn",alaska wilderness journey freedom family
+154,127 Hours,2010,Adventure|Biography|Drama,Danny Boyle,"James Franco,Kate Mara",canyon climber trapped survival utah
+155,Wild,2014,Adventure|Biography|Drama,Jean-Marc Vallée,"Reese Witherspoon,Laura Dern",hiking trail grief addiction recovery
+156,The Revenant,2015,Action|Adventure|Drama,Alejandro G. Iñárritu,"Leonardo DiCaprio,Tom Hardy",frontier bear survival revenge wilderness
+157,Dances with Wolves,1990,Adventure|Drama|Western,Kevin Costner,"Kevin Costner,Mary McDonnell",soldier plains tribe frontier friendship
+158,Unforgiven,1992,Drama|Western,Clint Eastwood,"Clint Eastwood,Gene Hackman",gunslinger bounty retirement violence west
+159,True Grit,2010,Adventure|Drama|Western,"Joel Coen,Ethan Coen","Jeff Bridges,Matt Damon",marshal revenge frontier girl outlaw
+160,The Hateful Eight,2015,Crime|Drama|Mystery|Western,Quentin Tarantino,"Samuel L. Jackson,Kurt Russell",blizzard cabin bounty hunters standoff
+161,3:10 to Yuma,2007,Action|Crime|Drama|Western,James Mangold,"Christian Bale,Russell Crowe",outlaw train rancher escort arizona
+162,Tombstone,1993,Action|Biography|Drama|Western,George P. Cosmatos,"Kurt Russell,Val Kilmer",gunfight lawmen arizona feud frontier
+163,The Grey,2011,Action|Adventure|Drama,Joe Carnahan,"Liam Neeson,Frank Grillo",wolves plane crash alaska survival wilderness
+164,Prisoners,2013,Crime|Drama|Mystery,Denis Villeneuve,"Hugh Jackman,Jake Gyllenhaal",kidnapping detective father investigation suburb
+165,Nightcrawler,2014,Crime|Drama|Thriller,Dan Gilroy,"Jake Gyllenhaal,Rene Russo",journalist crime footage los angeles ambition
+166,Drive,2011,Crime|Drama|Thriller,Nicolas Winding Refn,"Ryan Gosling,Carey Mulligan",stunt driver heist los angeles neon
+167,Sicario,2015,Action|Crime|Drama,Denis Villeneuve,"Emily Blunt,Benicio del Toro",cartel border agent mexico task force
+168,Baby Driver,2017,Action|Crime|Drama,Edgar Wright,"Ansel Elgort,Lily James",getaway driver heist music atlanta
+169,The Big Short,2015,Biography|Comedy|Drama,Adam McKay,"Christian Bale,Steve Carell",financial crisis housing wall street bankers
+170,Moneyball,2011,Biography|Drama|Sport,Bennett Miller,"Brad Pitt,Jonah Hill",baseball statistics oakland analytics manager
+171,Spotlight,2015,Biography|Crime|Drama,Tom McCarthy,"Mark Ruffalo,Michael Keaton",journalists boston investigation church scandal
+172,The Post,2017,Biography|Drama|History,Steven Spielberg,"Meryl Streep,Tom Hanks",newspaper pentagon papers journalism press
+173,Argo,2012,Biography|Drama|Thriller,Ben Affleck,"Ben Affleck,Bryan Cranston",cia hostage iran film cover rescue
+174,Captain Phillips,2013,Biography|Drama|Thriller,Paul Greengrass,"Tom Hanks,Barkhad Abdi",pirates cargo ship somalia hostage rescue

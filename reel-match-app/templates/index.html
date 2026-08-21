@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Movie Recommender</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 850px;
+      margin: 55px auto;
+    }
+
+    header {
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 32px;
+      font-weight: 600;
+      color: #222;
+    }
+
+    .subtitle {
+      margin-top: 8px;
+      color: #666;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .search-box {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 22px;
+      border-radius: 6px;
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .search-row {
+      display: flex;
+      gap: 8px;
+    }
+
+    input {
+      flex: 1;
+      min-width: 0;
+      padding: 12px 13px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 15px;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: #777;
+    }
+
+    button {
+      padding: 12px 18px;
+      border: 0;
+      border-radius: 4px;
+      background: #333;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #222;
+    }
+
+    button:disabled {
+      background: #999;
+      cursor: not-allowed;
+    }
+
+    .hint {
+      margin-top: 9px;
+      color: #888;
+      font-size: 12px;
+    }
+
+    #status {
+      margin-top: 18px;
+      font-size: 14px;
+      min-height: 20px;
+    }
+
+    #status.error {
+      color: #c0392b;
+    }
+
+    #status.loading {
+      color: #666;
+    }
+
+    #results {
+      margin-top: 22px;
+    }
+
+    .matched {
+      margin-bottom: 12px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .matched b {
+      color: #222;
+    }
+
+    .movie {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 16px;
+      margin-bottom: 9px;
+    }
+
+    .movie-info {
+      min-width: 0;
+    }
+
+    .movie-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .year {
+      color: #888;
+      font-weight: normal;
+      font-size: 14px;
+    }
+
+    .meta {
+      color: #777;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    .score {
+      flex-shrink: 0;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .score small {
+      display: block;
+      margin-top: 2px;
+      font-size: 10px;
+      color: #999;
+      font-weight: normal;
+    }
+
+    .empty {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 20px;
+      text-align: center;
+      color: #777;
+      border-radius: 5px;
+    }
+
+    footer {
+      margin-top: 35px;
+      color: #999;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 30px auto;
+      }
+
+      h1 {
+        font-size: 27px;
+      }
+
+      .search-row {
+        flex-direction: column;
+      }
+
+      button {
+        width: 100%;
+      }
+
+      .movie {
+        align-items: flex-start;
+      }
+
+      .score {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>Movie Recommender</h1>
+      <div class="subtitle">
+        Enter a movie you like and get similar movies based on
+        genre, director, cast and other information.
+      </div>
+    </header>
+
+
+    <div class="search-box">
+
+      <label for="movie-input">Movie name</label>
+
+      <div class="search-row">
+        <input
+          type="text"
+          id="movie-input"
+          placeholder="e.g. The Dark Knight"
+          list="movie-list"
+          autocomplete="off"
+        >
+
+        <datalist id="movie-list"></datalist>
+
+        <button id="submit-btn" type="button">
+          Search
+        </button>
+      </div>
+
+      <div class="hint">
+        You can select a movie from the suggestions or type its name manually.
+      </div>
+
+      <div id="status"></div>
+
+      <div id="results"></div>
+
+    </div>
+
+
+    <footer>
+      Recommendations are calculated using movie information such as
+      genre, director and cast. Results may not always match personal taste.
+    </footer>
+
+  </div>
+
+
+  <script>
+    const input = document.getElementById("movie-input");
+    const button = document.getElementById("submit-btn");
+    const status = document.getElementById("status");
+    const results = document.getElementById("results");
+    const movieList = document.getElementById("movie-list");
+
+
+    // Load movie titles for autocomplete
+    fetch("/api/movies")
+      .then(response => response.json())
+      .then(data => {
+
+        const titles = data.titles || [];
+
+        titles.forEach(title => {
+          const option = document.createElement("option");
+          option.value = title;
+          movieList.appendChild(option);
+        });
+
+      })
+      .catch(() => {
+        // Autocomplete is optional.
+      });
+
+
+    function setStatus(message, type = "") {
+      status.textContent = message;
+      status.className = type;
+    }
+
+
+    function escapeHtml(value) {
+      const div = document.createElement("div");
+      div.textContent = value ?? "";
+      return div.innerHTML;
+    }
+
+
+    function showResults(data) {
+
+      results.innerHTML = "";
+
+      const matched = document.createElement("div");
+
+      matched.className = "matched";
+
+      matched.innerHTML =
+        `Showing movies similar to <b>${escapeHtml(data.matched_title)}</b>`;
+
+      results.appendChild(matched);
+
+
+      const recommendations = data.recommendations || [];
+
+
+      if (recommendations.length === 0) {
+
+        const empty = document.createElement("div");
+
+        empty.className = "empty";
+        empty.textContent = "No similar movies were found.";
+
+        results.appendChild(empty);
+
+        return;
+      }
+
+
+      recommendations.forEach(movie => {
+
+        const item = document.createElement("div");
+
+        item.className = "movie";
+
+        item.innerHTML = `
+          <div class="movie-info">
+
+            <div class="movie-title">
+              ${escapeHtml(movie.title)}
+              <span class="year">
+                (${escapeHtml(movie.year)})
+              </span>
+            </div>
+
+            <div class="meta">
+              ${escapeHtml(movie.genres)}
+              ${movie.director
+                ? " · Director: " + escapeHtml(movie.director)
+                : ""}
+            </div>
+
+          </div>
+
+          <div class="score">
+            ${escapeHtml(movie.match_score)}%
+            <small>MATCH</small>
+          </div>
+        `;
+
+        results.appendChild(item);
+
+      });
+    }
+
+
+    async function searchMovie() {
+
+      const movie = input.value.trim();
+
+      results.innerHTML = "";
+
+      if (!movie) {
+
+        setStatus("Please enter a movie name.", "error");
+
+        input.focus();
+
+        return;
+      }
+
+
+      setStatus("Searching...", "loading");
+
+      button.disabled = true;
+
+
+      try {
+
+        const response = await fetch("/api/recommend", {
+
+          method: "POST",
+
+          headers: {
+            "Content-Type": "application/json"
+          },
+
+          body: JSON.stringify({
+            movie: movie
+          })
+
+        });
+
+
+        const data = await response.json();
+
+
+        if (!response.ok) {
+
+          setStatus(
+            data.error || "Movie could not be found.",
+            "error"
+          );
+
+          return;
+        }
+
+
+        setStatus("");
+
+        showResults(data);
+
+      }
+
+      catch (error) {
+
+        setStatus(
+          "Unable to connect to the server. Please try again.",
+          "error"
+        );
+
+      }
+
+      finally {
+
+        button.disabled = false;
+
+      }
+    }
+
+
+    button.addEventListener("click", searchMovie);
+
+
+    input.addEventListener("keydown", function(event) {
+
+      if (event.key === "Enter") {
+        searchMovie();
+      }
+
+    });
+
+  </script>
+
+</body>
+</html>

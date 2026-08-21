@@ -1,0 +1,99 @@
+{
+  "info": {
+    "name": "Reel Match - Movie Recommender API",
+    "description": "Endpoints for the Reel Match content-based movie recommender. Set the {{base_url}} variable to your deployed URL (or http://127.0.0.1:5000 for local testing).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "base_url", "value": "http://127.0.0.1:5000" }
+  ],
+  "item": [
+    {
+      "name": "Health check",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/health"
+      }
+    },
+    {
+      "name": "List all movie titles",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/movies"
+      }
+    },
+    {
+      "name": "Recommend - valid movie",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"movie\": \"Inception\"\n}"
+        },
+        "url": "{{base_url}}/api/recommend"
+      }
+    },
+    {
+      "name": "Recommend - typo (fuzzy match)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"movie\": \"Incepton\"\n}"
+        },
+        "url": "{{base_url}}/api/recommend"
+      }
+    },
+    {
+      "name": "Recommend - ERROR: empty input",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"movie\": \"\"\n}"
+        },
+        "url": "{{base_url}}/api/recommend"
+      }
+    },
+    {
+      "name": "Recommend - ERROR: missing field",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{}" },
+        "url": "{{base_url}}/api/recommend"
+      }
+    },
+    {
+      "name": "Recommend - ERROR: malformed JSON",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "not valid json" },
+        "url": "{{base_url}}/api/recommend"
+      }
+    },
+    {
+      "name": "Recommend - ERROR: movie not found",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"movie\": \"zzqxnotamovie999\"\n}"
+        },
+        "url": "{{base_url}}/api/recommend"
+      }
+    },
+    {
+      "name": "Recommend - ERROR: wrong HTTP method",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/recommend"
+      }
+    }
+  ]
+}
