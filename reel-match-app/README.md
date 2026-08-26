@@ -1,6 +1,6 @@
 # Reel Match — Content-Based Movie Recommender
 
-![Image](https://raw.githubusercontent.com/khelendrameena/REPOSITORY/main/path/to/image.png)
+![Image](https://raw.githubusercontent.com/khelendrameena/neubytes_internship_task/main/reel-match-app/home.png)
 
 A small full-stack app: you type a movie you like, it returns 6 similar movies based on genre, director, cast and theme overlap. Built with Flask + scikit-learn on the backend and a plain HTML/CSS/JS frontend — no framework build step, no external ML API, no paid services.
 
